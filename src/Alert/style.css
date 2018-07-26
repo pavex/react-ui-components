@@ -1,0 +1,32 @@
+.ui-dialog__dimmer,
+.ui-dialog__progress {
+	__display:none;
+	position:fixed;
+	z-index:16777270;
+	__width:100%;
+	width:0;
+	height:100%;
+	top:0;
+	left:0;
+	transition:width 0 200ms;
+}
+.ui-dialog__dimmer {
+	background-color:black;
+	opacity:0;
+	transition:opacity 50ms 200ms cubic-bezier(0, 0, 0.2, 1);
+	cursor:progress;
+}
+.ui-dialog__progress {
+}
+.ui-dialog--fullpage {
+	width:100%;
+	height:100%;
+}
+.ui-dialog--loading .ui-dialog__dimmer,
+.ui-dialog--loading .ui-dialog__progress {
+	__display:block;
+	width:100%;
+}
+.ui-dialog--loading .ui-dialog__dimmer {
+	opacity:0.64;
+}

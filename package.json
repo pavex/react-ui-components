@@ -1,0 +1,26 @@
+{
+  "name": "react-ui-components",
+  "version": "1.0.0",
+  "description": "Additional material design UI components for React apps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavex/react-ui-components.git"
+  },
+  "keywords": [
+    "material",
+    "design",
+    "ui",
+    "component",
+    "react"
+  ],
+  "author": "Pavel Macháček <pavex@ines.cz>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavex/react-ui-components/issues"
+  },
+  "homepage": "https://github.com/pavex/react-ui-components#readme"
+}
