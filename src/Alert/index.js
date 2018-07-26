@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {Rows, Row} from 'react-ui-layout';
+import {Rows, Row} from 'pavex-react-ui-layout';
 import Dialog from './../Dialog';
 import Button from 'preact-material-components/Button';
 import 'preact-material-components/Button/style.css';

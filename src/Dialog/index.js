@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {Rows, Row} from 'react-ui-layout';
+import {Rows, Row} from 'pavex-react-ui-layout';
 import Scrollbox from './../Scrollbox';
 import './style.css';
 
