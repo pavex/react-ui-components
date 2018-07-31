@@ -5,9 +5,6 @@
 .mdc-text-field--selectable-contents textarea.mdc-text-filed__contents {
 	height:100%;
 	resize:none;
-	padding:0 4px;
-	border:1px solid rgb(240, 240, 240);
-	margin:-1px -5px;
 	outline:none;
 	width:100%;	
 	line-height:24px;
@@ -15,6 +12,14 @@
 	word-spacing:0;
 	white-space:pre;
 	overflow:scroll;
+
+	padding:0 4px;
+	margin:-1px -5px;
+	border:1px solid rgb(240, 240, 240);
+/**/
+	padding:4px;
+	margin:0px;
+	box-sizing:border-box;
 }
 .mdc-text-field--selectable-contents .mdc-line-ripple {
 	bottom:-4px;
