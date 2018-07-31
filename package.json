@@ -1,6 +1,6 @@
 {
   "name": "pavex-react-ui-components",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Additional material design UI components for React apps.",
   "main": "index.js",
   "scripts": {
