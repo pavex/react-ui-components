@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import LineRipple from 'preact-material-components/LineRipple';
 import 'preact-material-components/TextField/style.css';
 import 'preact-material-components/LineRipple/style.css';
@@ -6,6 +7,23 @@ import './style.css';
 
 
 export default class TextFieldContents extends Component {
+
+
+	static propTypes = {
+		code: PropTypes.string
+	};
+
+
+
+
+
+	static defaultProps = {
+		code: null
+	};
+
+
+
+
 
 /** {Element} */
 	_textarea = null;
@@ -47,9 +65,10 @@ export default class TextFieldContents extends Component {
 
 
 	render() {
+		let {code, ...props} = this.props;
 		return (
 			<div
-				{...this.props}
+				{...props}
 				className="mdc-text-field mdc-text-field--selectable-contents"
 				tabIndex={0}
 				onFocusin={this._focusin.bind(this)}
@@ -63,7 +82,7 @@ export default class TextFieldContents extends Component {
 					spellCheck="false"
 					readOnly="true"
 				>
-					{this.props.code}
+					{code}
 				</textarea>
 				<LineRipple ref={(ref) => this._ripple = ref} />
 			</div>
