@@ -11,7 +11,8 @@ export default class CheckboxField extends Component {
 
 
 	static propTypes = {
-		label: PropTypes.string
+		label: PropTypes.string,
+		style: PropTypes.object
 	};
 
 
@@ -50,10 +51,10 @@ export default class CheckboxField extends Component {
 
 
 	render() {
-		let {label, ...props} = this.props;
+		let {label, style, ...props} = this.props;
 		let id = this._getId();
 		return (
-			<Formfield className={this.props.disabled ? 'mdc-form-field--disabled' : null}>
+			<Formfield className={this.props.disabled ? 'mdc-form-field--disabled' : null} style={style}>
 				<Checkbox {...props} id={id} />
 				<label for={id} disabled={this.props.disabled}>{label}</label>
 			</Formfield>
